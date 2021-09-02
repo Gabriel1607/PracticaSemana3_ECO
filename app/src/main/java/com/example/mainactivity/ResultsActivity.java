@@ -2,6 +2,7 @@ package com.example.mainactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,5 +18,11 @@ private Button calcBtnPlus;
         texticoResult = findViewById(R.id.texticoResult);
         resultNota = findViewById(R.id.resultNota);
         calcBtnPlus = findViewById(R.id.calcBtnPlus);
+        calcBtnPlus.setOnClickListener(
+                (v) ->{
+                    Intent i = new Intent(this,MainActivity.class);
+                    startActivity(i);
+                }
+        );
     }
 }

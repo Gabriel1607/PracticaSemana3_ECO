@@ -28,8 +28,9 @@
         android:hint="Proyecto Parcial 1"
         android:inputType="textPersonName"
         android:textStyle="italic"
-        app:layout_constraintTop_toBottomOf="@+id/tituloCalc"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloCalc" />
 
     <EditText
         android:id="@+id/notaEdit2"
@@ -40,8 +41,9 @@
         android:hint="Proyecto Parcial 2"
         android:inputType="textPersonName"
         android:textStyle="italic"
-        app:layout_constraintTop_toBottomOf="@+id/notaEdit1"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notaEdit1" />
 
     <EditText
         android:id="@+id/notaEdit3"
@@ -52,8 +54,9 @@
         android:hint="Quices"
         android:inputType="textPersonName"
         android:textStyle="italic"
-        app:layout_constraintTop_toBottomOf="@+id/notaEdit2"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notaEdit2" />
 
     <EditText
         android:id="@+id/notaEdit4"
@@ -64,8 +67,9 @@
         android:hint="Parcial 1"
         android:inputType="textPersonName"
         android:textStyle="italic"
-        app:layout_constraintTop_toBottomOf="@+id/notaEdit3"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notaEdit3" />
 
     <EditText
         android:id="@+id/notaEdit5"
@@ -76,8 +80,9 @@
         android:hint="Parcial 2"
         android:inputType="textPersonName"
         android:textStyle="italic"
-        app:layout_constraintTop_toBottomOf="@+id/notaEdit4"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notaEdit4" />
 
     <Button
         android:id="@+id/calcBtn"
@@ -85,7 +90,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Calcular"
-        app:layout_constraintTop_toBottomOf="@+id/notaEdit5"
-        tools:layout_editor_absoluteX="158dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notaEdit5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

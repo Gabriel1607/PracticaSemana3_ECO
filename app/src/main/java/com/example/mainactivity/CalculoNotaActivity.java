@@ -2,6 +2,7 @@ package com.example.mainactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +23,11 @@ private Button calcBtn;
         notaEdit4 = findViewById(R.id.notaEdit4);
         notaEdit5 = findViewById(R.id.notaEdit5);
         calcBtn = findViewById(R.id.calcBtn);
-
+        calcBtn.setOnClickListener(
+                (v) ->{
+                    Intent i = new Intent(this,ResultsActivity.class);
+                    startActivity(i);
+                }
+        );
     }
 }

@@ -38,8 +38,9 @@
         android:background="#2196F3"
         android:text="Azul"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/texticoConfig"
-        tools:layout_editor_absoluteX="161dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texticoConfig" />
 
     <Button
         android:id="@+id/blancoBtn"
@@ -48,8 +49,9 @@
         android:layout_marginTop="30dp"
         android:background="#FFFFFF"
         android:text="Blanco"
-        app:layout_constraintTop_toBottomOf="@+id/azulBtn"
-        tools:layout_editor_absoluteX="161dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/azulBtn" />
 
     <Button
         android:id="@+id/negroBtn"
@@ -59,6 +61,7 @@
         android:background="#000000"
         android:text="Negro"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/blancoBtn"
-        tools:layout_editor_absoluteX="161dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blancoBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

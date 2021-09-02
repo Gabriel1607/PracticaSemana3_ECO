@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigActivity">
+
+    <TextView
+        android:id="@+id/tituloConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Configuración de color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texticoConfig"
+        android:layout_width="221dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:text="Seleccione un color de fondo para la aplicación"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloConfig" />
+
+    <Button
+        android:id="@+id/azulBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#2196F3"
+        android:text="Azul"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/texticoConfig"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <Button
+        android:id="@+id/blancoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:text="Blanco"
+        app:layout_constraintTop_toBottomOf="@+id/azulBtn"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <Button
+        android:id="@+id/negroBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#000000"
+        android:text="Negro"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/blancoBtn"
+        tools:layout_editor_absoluteX="161dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

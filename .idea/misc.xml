@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/MainActivity/app/src/main/res/drawable/textfield.xml" value="0.1259259259259259" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/MainActivity/app/src/main/res/layout/activity_calculo_nota.xml" value="0.264" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/MainActivity/app/src/main/res/layout/activity_config.xml" value="0.152" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/MainActivity/app/src/main/res/layout/activity_config.xml" value="0.536" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/MainActivity/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/MainActivity/app/src/main/res/layout/activity_results.xml" value="0.264" />
       </map>

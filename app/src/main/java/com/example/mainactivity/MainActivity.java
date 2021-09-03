@@ -38,8 +38,8 @@ private ConstraintLayout bg;
 
         continuarBtn.setOnClickListener(
                 (v) ->{
-                    if(!nombreEdit.getText().toString().isEmpty()){
-                        sp1.edit().putString("nombre", nombreEdit.getText().toString()).apply();
+                    if(!nombreEdit.getText().toString().replaceAll("\\s","").isEmpty()){
+                        sp1.edit().putString("nombre", nombreEdit.getText().toString().trim()).apply();
                         Intent i = new Intent(this, CalculoNotaActivity.class);
                         startActivity(i);
                     }else{

@@ -14,6 +14,7 @@ public class ResultsActivity extends AppCompatActivity {
 private TextView tituloResult,texticoResult,resultNota;
 private Button calcBtnPlus;
 private ConstraintLayout bgResult;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,7 @@ private ConstraintLayout bgResult;
         super.onResume();
         SharedPreferences sp = getSharedPreferences("colorcitos",MODE_PRIVATE);
         String color = sp.getString("color","#FFFFFF");
+        texticoResult.setText("Hola "+sp.getString("nombre","estudiante")+", tu nota final es de:");
         bgResult.setBackgroundColor(Color.parseColor(color));
     }
 }

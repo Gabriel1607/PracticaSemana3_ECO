@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 private Button configBtn,continuarBtn;
@@ -17,11 +18,12 @@ private TextView textico;
 private EditText nombreEdit;
 private ConstraintLayout bg;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        SharedPreferences sp1 = getSharedPreferences("colorcitos",MODE_PRIVATE);
         configBtn = findViewById(R.id.configBtn);
         bg = findViewById(R.id.bg);
         continuarBtn = findViewById(R.id.continuarBtn);
@@ -33,10 +35,16 @@ private ConstraintLayout bg;
                     startActivity(i);
                 }
         );
+
         continuarBtn.setOnClickListener(
                 (v) ->{
-                    Intent i = new Intent(this,CalculoNotaActivity.class);
-                    startActivity(i);
+                    if(!nombreEdit.getText().toString().isEmpty()){
+                        sp1.edit().putString("nombre", nombreEdit.getText().toString()).apply();
+                        Intent i = new Intent(this, CalculoNotaActivity.class);
+                        startActivity(i);
+                    }else{
+                        Toast.makeText(this, "Ingrese un nombre", Toast.LENGTH_SHORT).show();
+                    }
                 }
         );
     }

@@ -19,11 +19,13 @@ private ConstraintLayout bgResult;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+
         bgResult = findViewById(R.id.bgResult);
         tituloResult = findViewById(R.id.tituloResult);
         texticoResult = findViewById(R.id.texticoResult);
         resultNota = findViewById(R.id.resultNota);
         calcBtnPlus = findViewById(R.id.calcBtnPlus);
+
         calcBtnPlus.setOnClickListener(
                 (v) ->{
                     Intent i = new Intent(this,MainActivity.class);
@@ -38,5 +40,8 @@ private ConstraintLayout bgResult;
         String color = sp.getString("color","#FFFFFF");
         texticoResult.setText("Hola "+sp.getString("nombre","estudiante")+", tu nota final es de:");
         bgResult.setBackgroundColor(Color.parseColor(color));
+        String nota = Double.toString((getIntent().getExtras().getDouble("nota")));
+        String notafinal = nota.substring(0,4);
+        resultNota.setText(notafinal);
     }
 }
